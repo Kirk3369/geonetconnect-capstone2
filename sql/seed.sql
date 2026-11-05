@@ -54,6 +54,3 @@ INSERT INTO app_settings (setting_key, setting_value) VALUES
 ('sms_api_key', ''),
 ('sms_sender_name', 'RLINK'),
 ('sms_api_url', 'https://api.semaphore.co/api/v4/messages');
-
-INSERT INTO sms_logs (public_id, sent_at, recipient_name, recipient_role, phone, context, outage_public_id, message, status, provider, note) VALUES
-('sms_6a94007bd6fdf', '2026-08-30 12:05:47', 'Carlo Mendoza', 'technician', '09175550101', 'outage', NULL, 'Test outage in Igtambo', 'logged', 'mock', 'Mock mode — message stored locally (no carrier send).');

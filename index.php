@@ -110,7 +110,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <i class="fa-solid fa-circle-exclamation"></i>
                     <?php if ($databaseError): ?>
                         <?php echo htmlspecialchars($error); ?>
-                        <a href="install.php">Open the installer to create it.</a>
+                        <?php if (getenv("VERCEL") === "1"): ?>
+                            Check the hosted database connection settings.
+                        <?php else: ?>
+                            <a href="install.php">Open the installer to create it.</a>
+                        <?php endif; ?>
                     <?php else: ?>
                         <?php echo htmlspecialchars($error); ?>
                     <?php endif; ?>

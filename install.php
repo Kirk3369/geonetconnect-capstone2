@@ -1,5 +1,10 @@
 <?php
 
+if (getenv("VERCEL") === "1") {
+    http_response_code(404);
+    exit;
+}
+
 require_once __DIR__ . "/includes/db.php";
 
 $cfg = geonet_db_config();

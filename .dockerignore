@@ -1,0 +1,5 @@
+.git
+.vercel
+.env
+.env.*
+config/sms-log.json
