@@ -1,0 +1,8 @@
+{
+    "provider": "semaphore",
+    "enabled": true,
+    "mock_mode": true,
+    "api_key": "",
+    "sender_name": "RLINK",
+    "api_url": "https://api.semaphore.co/api/v4/messages"
+}
